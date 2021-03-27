@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Management System</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap-utilities.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="homePage">
+        <div class="container-sm">
+            <div class="text-center shadow p-3 mb-5 bg-white rounded">
+                <h1>Expense Management System</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container-sm">
+            <div class="row justify-content-center shadow p-5   bg-white rounded">
+                <div class="col-6 shadow p-3 bg-white rounded">
+                    <form onsubmit="login(event)">
+                        <div class="mb-3">
+                            <label for="InputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="InputPassword">
+                        </div>
+                        <div class="d-grid gap-2 col-6">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6  text-center righ-column">
+                    <div class="card card-body h-100 justify-content-center">
+                        <h2>Hello, Friend</h2>
+                        <p>Don't Have an Account? Go to Signup to Create your Account.</p>
+                        <div class="text-center d-grid gap-2 col-6 mx-auto">
+                            <a href="./screens/signup.html"> <button type="submit"  class="btn btn-primary btn-lg btn-block">   Signup </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap/js/bootstrap.js"></script>
+
+</body>
+
+</html>

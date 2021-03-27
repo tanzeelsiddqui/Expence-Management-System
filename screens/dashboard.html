@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap-utilities.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="homePage" >
+        <div class="container-sm">
+            <div class="text-center shadow p-3 mb-5 bg-white rounded">
+                <h1>Expense Management System</h1>
+                <p id="userName" style="font-size: 32px;font-weight: 700;"></p>
+                <button onclick="logout()" class="btn btn-primary">Logout</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container-sm text-center shadow p-3 bg-white rounded">
+            <h1>All Expenses</h1>
+            <a href="../screens/addExpence.html"><button class="btn btn-primary">Add Expense!</button></a> 
+            <a href="../screens/allCategory.html"><button class="btn btn-primary">All Categories!</button></a> 
+            <button onclick="expReport(printExpReport)" class="btn btn-success">Generate Report</button>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container-sm text-center shadow p-3 bg-white rounded">
+            <div class="row">
+                <div class="col-md-4" style="margin: 0 auto;">
+                    <input onkeyup="search()" type="text" class="form-control" id="searchInput" placeholder="Search By Category..." value=""
+                        style="margin-top: 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container-sm text-center shadow p-3 bg-white rounded">
+            <div class="table-responsive" id="expenses">
+                <table class="table table-bordered table-hover table-border" id="printExpReport">
+                    <tbody id="allExp">
+                        <tr>
+                            <th class="table-border">Id</th>
+                            <th class="table-border">Description</th>
+                            <th class="table-border">Amount</th>
+                            <th class="table-border">Category</th>
+                            <th class="table-border">Created On</th>
+                            <th class="table-border">Actions</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/report.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap/js/bootstrap.js"></script>
+
+</body>
+
+</html>

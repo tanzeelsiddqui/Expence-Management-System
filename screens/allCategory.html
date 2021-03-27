@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Category</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap-utilities.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="homePage">
+        <div class="container-sm">
+            <div class="text-center shadow p-3 mb-5 bg-white rounded">
+                <a href="../screens/dashboard.html"><div class="bk-btn"><img src="../images/back.png" alt=""></div></a> 
+                <h1>Expense Management System</h1>
+                <button onclick="logout()" class="btn btn-primary">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container-sm text-center shadow p-3 bg-white rounded">
+            <h1>All Categories</h1>
+            <a href="./addCategory.html"> <button class="btn btn-primary">Add Category</button></a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container-sm text-center shadow p-3 bg-white rounded">
+            <div class="table-responsive" id="expenses">
+                <table class="table table-bordered table-hover table-border">
+                    <tbody id="allCategoryItem">
+                        <tr>
+                            <th class="table-border">Id</th>
+                            <th class="table-border">Category Name</th>
+                            <th class="table-border">Created On</th>
+                        </tr>
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="../js/addCategory.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap/js/bootstrap.js"></script>
+
+</body>
+
+</html>
